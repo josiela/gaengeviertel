@@ -1,0 +1,32 @@
+title: Gallery
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          fields:
+            header.media_order:
+              unset@: true
+            header.gallery:
+              name: gallery
+              type: list
+              style: vertical
+              label: Gallery
+              fields:
+                .image:
+                  type: file
+                  label: Image
+                  destination: 'self@'
+                .alt:
+                  type: text
+                  label: Caption
+                .link:
+                  type: text
+                  label: Link

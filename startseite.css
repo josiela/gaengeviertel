@@ -1,0 +1,27 @@
+@font-face{
+	font-family: 'Sneak-Black';
+	src: url(../fonts/Sneak-Black.otf);
+	src: url(../fonts/Sneak-Black.eot);
+	src: url(../fonts/Sneak-Black.eot?#iefix) format('embedded-opentype');
+}
+
+.home {
+   background: no-repeat cover center;
+}
+
+.starttext {
+  line-height: 1.6;
+	display: inline;
+	position: relative;
+	font: 200px Helvetica;
+	letter-spacing: -5px;
+	color: rgba(0,0,255,0.5);
+  font-family: 'Sneak-Black', Arial, sans-serif;
+}
+
+.starttext:after {
+	content: "Vor  gänge";
+	position: absolute; left: 10px; top: 5px;
+	color: rgba(255,0,0,0.5);
+  font-family: 'Sneak-Black', Arial, sans-serif;
+}

@@ -1,0 +1,21 @@
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+
+<div class="text">
+  {{ page.content }}
+</div>
+
+<div class="row">
+
+  <div class="gallery">
+    {% for i in page.header.gallery %}
+      <div class="gallery-item">
+        <a href="{{i.link}}">
+          {{ page.media[i.image|first.name].resize(300,300)}}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
+{% endblock %}
